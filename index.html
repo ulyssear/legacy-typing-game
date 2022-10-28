@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="fr">
 <head>
+    <base href="https://ulyssear.github.io/typing-game/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Clone du jeu Typing game">
+    <meta name="description" content="Typing game">
     <title>Typing game</title>
-
-    <link rel="stylesheet" href="./css/main.css" defer>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" defer>
+    <link rel="stylesheet" href="css/main.css" defer>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" defer>
+    <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" defer> -->
 </head>
 <body>
 
@@ -18,16 +19,16 @@
             <div class="col-12">
                 <h1>Typing game</h1>
                 <div class="grid-buttons">
-                    <a href="#jouer">Jouer</a>
-                    <a href="#leaderboard">Tableau des scores</a>
-                    <a href="#statistiques">Statistiques</a>
+                    <a aria-labelledby="jouer">Jouer</a>
+                    <a aria-labelledby="leaderboard">Tableau des scores</a>
+                    <a aria-labelledby="statistiques">Statistiques</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section data-name="jouer">
+<section aria-labelledby="jouer">
     <div class="container">
         <div class="row row-game-actions mb-5">
             <div class="col-12">
@@ -36,7 +37,7 @@
         </div>
         <div class="row mb-5">
             <div class="col-12">
-                <h1>Typing game</h1>
+                <h1 id="jouer">Typing game</h1>
             </div>
         </div>
         <div class="row">
@@ -73,12 +74,12 @@
     </div>
 </section>
 
-<section data-name="leaderboard">
+<section aria-labelledby="leaderboard">
     <div class="container">
         <div class="row mt-5 mb-5">
             <div class="col-12">
                 <button class="btn btn-secondary mr-3" data-name="back">< Retour</button>
-                <h1>Tableau des scores</h1>
+                <h1 id="leaderboard">Tableau des scores</h1>
             </div>
         </div>
         <div class="row mb-3">
@@ -119,14 +120,14 @@
     </div>
 </section>
 
-<section data-name="statistiques">
+<section aria-labelledby="statistiques">
     <div class="container">
         <div class="row mb-5">
         </div>
         <div class="row mb-5">
             <div class="col-12">
                 <button class="btn btn-secondary mr-3" data-name="back">< Retour</button>
-                <h1>Statistiques</h1>
+                <h1 id="statistiques">Statistiques</h1>
             </div>
         </div>
         <div class="row">
@@ -135,7 +136,7 @@
     </div>
 </section>
 
-<script src="./js/index.js" type="module"></script>
+<script src="js/index.js" type="module"></script>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-section[data-name="statistiques"] {
+section[aria-labelledby="statistiques"] {
     /*height: 100vh;*/
     width: 100vw;
     display: flex;

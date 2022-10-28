@@ -1,4 +1,4 @@
-section[data-name="leaderboard"] {
+section[aria-labelledby="leaderboard"] {
     /*height: 100vh;*/
     width: 100vw;
     display: flex;
@@ -7,6 +7,6 @@ section[data-name="leaderboard"] {
     flex-direction: column;
 }
 
-section[data-name="leaderboard"] input[type="radio"][name="difficulte"] {
+section[aria-labelledby="leaderboard"] input[type="radio"][name="difficulte"] {
     display: none;
 }

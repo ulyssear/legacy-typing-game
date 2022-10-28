@@ -25,31 +25,30 @@ function onClickLink(event) {
     const {nodeName} = target;
     if ('a' !== nodeName.toLowerCase()) target = target.closest('a');
 
-    const {href} = target;
+    const link = target.getAttribute('aria-labelledby');
 
-    const introductionSection = document.querySelector('section[data-name="introduction"]');
-    const sectionName = href.substring(href.indexOf("#") + 1);
+    const introductionSection = document.querySelector('section[aria-labelledby="introduction"]');
 
-    if ('jouer' === sectionName) {
+    if ('jouer' === link) {
         displayModalJouer();
         return;
     }
 
-    const section = document.querySelector(`section[data-name="${sectionName}"]`);
+    const section = document.querySelector(`section[aria-labelledby="${link}"]`);
     introductionSection.classList.remove('show');
 
-    console.log({section, sectionName});
+    console.log({section, link});
 
     setTimeout(function () {
         section.classList.add('show');
     }, 0);
 
-    if ('leaderboard' === sectionName) {
+    if ('leaderboard' === link) {
         initializeLeaderboard();
         return;
     }
 
-    if ('statistiques' === sectionName) {
+    if ('statistiques' === link) {
         initializeStatistiques();
         return;
     }

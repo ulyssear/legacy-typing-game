@@ -1,4 +1,4 @@
-section[data-name="introduction"] {
+section[aria-labelledby="introduction"] {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -7,29 +7,29 @@ section[data-name="introduction"] {
     flex-direction: column;
 }
 
-section[data-name="introduction"] .grid-buttons {
+section[aria-labelledby="introduction"] .grid-buttons {
     display: flex;
     flex-direction: row;
     margin-top: 3rem;
 }
 
-section[data-name="introduction"] .grid-buttons > a {
+section[aria-labelledby="introduction"] .grid-buttons > a {
     font-size: 1.25rem;
 }
 
-section[data-name="introduction"] .grid-buttons > a:not(:first-child) {
+section[aria-labelledby="introduction"] .grid-buttons > a:not(:first-child) {
     margin-left: 1.5rem;
 }
 
 @media screen and (max-width: 767px) {
-    section[data-name="introduction"] h1 {
+    section[aria-labelledby="introduction"] h1 {
         text-align: center;
     }
-    section[data-name="introduction"] .grid-buttons {
+    section[aria-labelledby="introduction"] .grid-buttons {
         flex-direction: column;
         text-align: center;
     }
-    section[data-name="introduction"] .grid-buttons > a:not(:first-child) {
+    section[aria-labelledby="introduction"] .grid-buttons > a:not(:first-child) {
         margin-left: 0;
         margin-top: 1.5rem;
     }
