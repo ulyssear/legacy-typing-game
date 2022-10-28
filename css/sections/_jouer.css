@@ -1,4 +1,4 @@
-section[aria-labelledby="jouer"] {
+section[data-name="jouer"] {
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -7,6 +7,6 @@ section[aria-labelledby="jouer"] {
     flex-direction: column;
 }
 
-section[aria-labelledby="jouer"] span[data-name="mot-actuel"] {
+section[data-name="jouer"] span[data-name="mot-actuel"] {
     font-size: 2rem;
 }
